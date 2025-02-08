@@ -22,7 +22,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   return (
     <>
-      <BookOverview {...bookDetails} userId={session?.user?.id as string} />
+      <BookOverview {...bookDetails} userId={session?.user?.id as string} isLoanedBook={false} />
 
       <div className="book-details">
         <div className="flex-[1.5]">
